@@ -1,0 +1,28 @@
+* {
+  color: #ffffff;
+}
+
+.big-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.big-card-container > div > img {
+  height: 30vh;
+}
+
+.big-card-news {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.big-card-news > span {
+  font-size: 1.2rem;
+}
+
+.big-card-news > p {
+  color: #6e6e6e;
+  font-size: 0.8rem;
+}

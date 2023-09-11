@@ -1,7 +1,16 @@
 <app-menu-bar></app-menu-bar>
+<hr />
 <app-menu-title></app-menu-title>
-<app-big-card></app-big-card>
-<app-small-card></app-small-card>
+<div ngClass="card-container">
+  <div ngClass="big-card-style">
+    <app-big-card></app-big-card>
+  </div>
+  <div ngClass="small-card-style">
+    <app-small-card></app-small-card>
+    <app-small-card></app-small-card>
+    <app-small-card></app-small-card>
+  </div>
+</div>
 <app-news-title></app-news-title>
 <app-news-card></app-news-card>
 

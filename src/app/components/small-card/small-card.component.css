@@ -1,0 +1,25 @@
+.small-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.small-card-container > div > img {
+  height: 10vh;
+}
+
+.p-news-small-card {
+  font-size: 0.7rem;
+}
+
+.small-card-news {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.small-card-news > span {
+  font-size: 0.6rem;
+  color: #6e6e6e;
+}
