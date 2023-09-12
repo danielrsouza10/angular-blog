@@ -1,6 +1,12 @@
 .title {
-  font-size: 18vw;
+  font-size: 12rem;
   font-weight: bold;
-  width: 100vw;
   text-align: center;
+}
+
+@media screen and (width: 1000px) {
+  .title {
+    font-size: 9rem;
+    width: 1000px;
+  }
 }

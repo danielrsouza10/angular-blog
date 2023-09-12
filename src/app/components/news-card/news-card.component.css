@@ -1,0 +1,30 @@
+.news-card-container {
+  max-width: 225px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
+
+.news-card-container > div > img {
+  max-width: 225px;
+}
+
+.news-date {
+  display: block;
+  margin-top: 10px;
+  color: #929395;
+  font-size: 0.5rem;
+}
+
+.news-title {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.p-bottom-news-card {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  color: #6b6b6f;
+}

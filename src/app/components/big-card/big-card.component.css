@@ -3,13 +3,15 @@
 }
 
 .big-card-container {
+  width: 45vw;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
 
 .big-card-container > div > img {
-  height: 30vh;
+  max-width: 500px;
 }
 
 .big-card-news {

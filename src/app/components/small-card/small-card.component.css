@@ -1,25 +1,26 @@
 .small-card-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 10px;
+  display: grid;
+  width: 45vw;
+  max-width: 500px;
+  grid-template-columns: 0.65fr 1fr;
 }
 
 .small-card-container > div > img {
-  height: 10vh;
+  height: 100px;
 }
 
 .p-news-small-card {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .small-card-news {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  justify-content: center;
+  gap: 10px;
 }
 
 .small-card-news > span {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   color: #6e6e6e;
 }
