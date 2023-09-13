@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./big-card.component.css'],
 })
 export class BigCardComponent {
-  image = './assets/celeste-game.avif';
+  image = './assets/celeste-game.jpg';
 }

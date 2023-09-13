@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./news-card.component.css'],
 })
 export class NewsCardComponent {
-  image = './assets/celeste-game.avif';
+  image = './assets/celeste-game.jpg';
 }

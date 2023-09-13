@@ -1,12 +1,11 @@
 .title {
-  font-size: 12rem;
+  font-size: 9rem;
   font-weight: bold;
   text-align: center;
 }
 
 @media screen and (width: 1000px) {
   .title {
-    font-size: 9rem;
-    width: 1000px;
+    font-size: 4rem;
   }
 }

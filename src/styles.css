@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -12,4 +12,8 @@ body {
   margin: 0 auto;
   max-width: 1100px;
   background-color: #f6f8fc;
+}
+
+a {
+  text-decoration: none;
 }
