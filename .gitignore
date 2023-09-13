@@ -1,4 +1,5 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
+/ideas
 
 # Compiled output
 /dist
@@ -13,7 +14,6 @@ yarn-error.log
 
 # IDEs and editors
 .idea/
-/ideas
 .project
 .classpath
 .c9/
