@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { getLocaleEraNames } from '@angular/common';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-big-card',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./big-card.component.css'],
 })
 export class BigCardComponent {
-  image = './assets/celeste-game.jpg';
+  @Input()
+  cardImage: string = '';
+  @Input()
+  cardTitle: string = '';
+  @Input()
+  cardDescription: string = '';
+
+  constructor() {}
+
+  ngOnInit() {}
 }

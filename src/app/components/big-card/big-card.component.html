@@ -1,14 +1,13 @@
 <div ngClass="big-card-container">
   <div>
-    <img src="{{ image }}" alt="big-card-image" />
+    <img src="{{ cardImage }}" alt="big-card-image" />
   </div>
   <div ngClass="big-card-news">
-    <a href="#"><span>Aqui fica o título da notícia</span></a>
+    <a href="#"
+      ><span>{{ cardTitle }}</span></a
+    >
     <p ngClass="p-news-big-card">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magnam
-      voluptate temporibus mollitia ipsam deserunt veniam illum eaque.
-      Recusandae earum molestias quia aspernatur, commodi sunt hic non excepturi
-      ullam distinctio!
+      {{ cardDescription }}
     </p>
   </div>
 </div>
