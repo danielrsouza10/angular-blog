@@ -1,27 +1,128 @@
-# AngularBlog
+# Blog Page developed with Angular 16.2.6
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+## Table of contents
 
-## Development server
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshots](#screenshots)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Overview
 
-## Code scaffolding
+### The challenge
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Users should be able to:
 
-## Build
+- View and select generated news about some games;
+- Access dynamic pages by click in the links of the home page;
+- See commom components in every page;
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Screenshots
 
-## Running unit tests
+![](src/assets/images/Screenshot_1.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Links
 
-## Running end-to-end tests
+- Solution URL: [GithHub Repository](https://github.com/danielrsouza10/angular-blog)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## My process
 
-## Further help
+### Built with
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Angular
+- TypeScript
+- Semantic HTML5 markup
+- Semantic HTML5 markup
+- CSS custom properties
+
+### What I learned
+
+- Angular components;
+- Angular Routes;
+- Relational Database;
+- Improve functions on - TypeScript;
+- Development of good components;
+- Fetch os dynamic informations to put on the pages.
+
+```Ts
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((value) => {
+      this.id = value.get('id');
+    });
+    this.setValuesToComponent(this.id);
+  }
+
+  setValuesToComponent(id: string | null) {
+    const result = dataFake.filter((article) => article.id == id)[0];
+    this.contentTitle = result.title;
+    this.contentImage = result.photo;
+    this.contentDescription = result.description;
+  }
+```
+
+```Html
+<div ngClass="black-container">
+  <app-menu-title></app-menu-title>
+  <div ngClass="card-container">
+    <div ngClass="big-card-style">
+      <app-big-card
+        id="1"
+        cardImage="./assets/celeste-game.jpg"
+        cardTitle="Jóia escondida"
+        cardDescription="Com uma pegada mais emocional e com ótimos desafios e controle, Celeste é o jogo para te tirar do tédio esse final de semana"
+      ></app-big-card>
+    </div>
+    <div ngClass="small-card-style">
+      <app-small-card
+        id="2"
+        cardImage="https://th.bing.com/th/id/OIP.eGQuPs5deEGRXEfxfWE6tQHaEK?w=317&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+        cardTitle="The Last of Us premiado"
+        cardDescription="The Last of Us part II foi novamente premiado por especialistas"
+      ></app-small-card>
+      <app-small-card
+        id="3"
+        cardImage="https://th.bing.com/th/id/OIP.dz72DuoAyz-aC6ajD5QCzgHaEK?pid=ImgDet&rs=1"
+        cardTitle="The Witcher 3 ganha data de lançamento"
+        cardDescription="Remasterização promete melhor desempenho e melhores gráficos do já consagrado RPG da CD Red Project"
+      ></app-small-card>
+      <app-small-card
+        id="4"
+        cardImage="https://th.bing.com/th/id/OIP.EjP2MedjTR-7Pduf_lJseQHaEK?pid=ImgDet&rs=1"
+        cardTitle="South Park vai ganhar um novo game"
+        cardDescription="Novo game estará disponível ainda este ano para todas as plataformas"
+      ></app-small-card>
+    </div>
+  </div>
+</div>
+<div ngClass="white-container">
+  <app-news-title></app-news-title>
+  <div ngClass="bottom-news-container">
+    <app-news-card></app-news-card>
+    <app-news-card></app-news-card>
+    <app-news-card></app-news-card>
+    <app-news-card></app-news-card>
+  </div>
+</div>
+
+```
+
+### Continued development
+
+Now I will continue to develop the code to het real news from API's and develop more dynamic pages from this project.
+
+### Useful resources
+
+- [DIO](https://www.dio.me/) - This helped me with Angular routes.
+
+## Author
+
+- Website - [Linkedin](https://www.linkedin.com/in/danielrsouza/)
+- Instagram - [@danielrsouza](https://www.instagram.com/danielrsouza)
