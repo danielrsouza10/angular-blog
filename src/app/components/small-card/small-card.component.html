@@ -3,11 +3,13 @@
     <img src="{{ cardImage }}" alt="big-card-image" />
   </div>
   <div ngClass="small-card-news">
-    <a href="#"
+    <a [routerLink]="['content', id]"
       ><span>{{ cardTitle }}</span></a
     >
-    <p ngClass="p-news-small-card">
-      {{ cardDescription }}
-    </p>
+    <a [routerLink]="['content', id]">
+      <p ngClass="p-news-small-card">
+        {{ cardDescription }}
+      </p></a
+    >
   </div>
 </div>

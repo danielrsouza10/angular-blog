@@ -24,3 +24,8 @@
   font-size: 0.7rem;
   color: #6e6e6e;
 }
+
+.small-card-news > a > p {
+  font-size: 0.7rem;
+  color: #ffffff;
+}
