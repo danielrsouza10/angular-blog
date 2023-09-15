@@ -116,7 +116,9 @@ Users should be able to:
 
 ### Continued development
 
-Now I will continue to develop the code to het real news from API's and develop more dynamic pages from this project.
+- Mobile responsive design
+- Import news from a API's
+- More dynamic pages from this project.
 
 ### Useful resources
 
