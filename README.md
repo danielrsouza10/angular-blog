@@ -48,7 +48,7 @@ Users should be able to:
 - Relational Database;
 - Improve functions on - TypeScript;
 - Development of good components;
-- Fetch os dynamic informations to put on the pages.
+- Fetch of dynamic informations to put on the pages.
 
 ```Ts
   constructor(private route: ActivatedRoute) {}
